@@ -12,7 +12,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 # Function to get Gemini API response
-def get_gemini_response(prompt, image_bytes):
+#def get_gemini_response(prompt, image_bytes):
     try:
         response = model.generate_content([prompt, image_bytes])
         return response.text
@@ -98,6 +98,6 @@ with col2:
 # Footer Section
 st.markdown("---")
 st.markdown(
-    "<h6 style='text-align: center; color: grey;'>Built with ❤️ by AR | 2024</h6>", 
+    "<h6 style='text-align: center; color: grey;'>Built with ❤️ by Click_2_Cook team | 2024</h6>", 
     unsafe_allow_html=True
 )
