@@ -12,7 +12,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 # Function to get Gemini API response
-#def get_gemini_response(prompt, image_bytes):
+
     try:
         response = model.generate_content([prompt, image_bytes])
         return response.text
